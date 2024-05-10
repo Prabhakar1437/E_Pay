@@ -1,0 +1,41 @@
+.card{
+    background-color: white;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5);
+}
+
+.loader-parent{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.696);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader{
+    height: 80px;
+    width: 80px;
+    border: 5px solid #00C897;
+    border-radius: 50%;
+    border-top-color: #c4c4c4;
+    animation: loader-anim 1s linear infinite;
+}
+
+table{
+    border: 1px solid #d4d2d2;
+}
+
+
+.br-3{
+    border-radius: 3px;
+}
+
+@keyframes loader-anim {
+    0%{
+        transform:  rotate(0deg);
+    }
+    100%{
+        transform:  rotate(360deg);
+    }
+}
